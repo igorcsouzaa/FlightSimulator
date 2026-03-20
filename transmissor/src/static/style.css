@@ -1,0 +1,278 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; letter-spacing: 1px;}
+
+:root {
+    --main-color: #0a0e14;
+    --secondary-color: #111827;
+    --detail-color: #1d6bb5;
+}
+
+
+
+body {
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.main-header {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--detail-color);
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    align-items: stretch;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.imgLogo {
+    aspect-ratio: 1;
+    height: 100%;
+    align-self: stretch;
+    background-image: url("../../../assets/mfsimLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big-text{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.small-text {
+    font-size: 0.7rem;
+    white-space: nowrap
+}
+
+.blue-text {
+    color: var(--detail-color);
+}
+
+.transmitting {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.transmitting .text {
+    color: #22c55e;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    height: 65%;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid var(--detail-color); /* Linha cinza embaixo */
+    margin: 10px 0;
+}   
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--detail-color);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.information {
+    width: 220px;
+}
+
+.input {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.input input[type="range"] {
+    width: 80%;
+}
+
+.value {
+    width: 60px;
+    text-align: right;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; letter-spacing: 1px;}
+
+:root {
+    --main-color: #0a0e14;
+    --secondary-color: #111827;
+    --detail-color: #1d6bb5;
+}
+
+
+
+body {
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.main-header {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--detail-color);
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    align-items: stretch;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.imgLogo {
+    aspect-ratio: 1;
+    height: 100%;
+    align-self: stretch;
+    background-image: url("../../../assets/mfsimLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big-text{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.small-text {
+    font-size: 0.7rem;
+    white-space: nowrap
+}
+
+.blue-text {
+    color: var(--detail-color);
+}
+
+.transmitting {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.transmitting .text {
+    color: #22c55e;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    height: 65%;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid var(--detail-color); /* Linha cinza embaixo */
+    margin: 10px 0;
+}   
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--detail-color);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.information {
+    width: 220px;
+}
+
+.input {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.input input[type="range"] {
+    width: 80%;
+}
+
+.value {
+    width: 60px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 1.4rem;
+    padding-block: 0.7rem;
+    border: 1px solid var(--detail-color);
+    background-color: var(--main-color);
+    border-radius: 7px;
+}
