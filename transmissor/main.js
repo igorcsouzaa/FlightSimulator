@@ -12,7 +12,7 @@ function CreateWindow() {
         minHeight: 600
     })
 
-    // win.setMenu(null)
+    //win.setMenu(null)
     win.loadFile(pagesPath + '/index.html')
 }
 

@@ -34,8 +34,17 @@
             <div class="small-text blue-text">MIN - MAX: 0 - 200</div>
           </div>
           <div class="input">
-            <input type="range" value="0" />
-          </div>
+            <div class="range-wrapper">
+                <input type="range" min="0" max="200" value="0" />
+                <div class="range-ticks">
+                    <span>0</span>
+                    <span>50</span>
+                    <span>100</span>
+                    <span>150</span>
+                    <span>200</span>
+                </div>
+            </div>
+        </div>
           <div class="value">
             <div class="number big-text blue-text">000</div>
             <div class="small-text blue-text">KTS</div>
@@ -48,18 +57,27 @@
             <div class="small-text blue-text">MIN - MAX: -2000 - +2000</div>
           </div>
           <div class="input">
-            <input type="range" value="50" />
-          </div>
+            <div class="range-wrapper">
+                <input type="range" class="orange-range" min="-2000" max="2000" value="0" />
+                <div class="range-ticks">
+                    <span>-2000</span>
+                    <span>-1000</span>
+                    <span>0</span>
+                    <span>+1000</span>
+                    <span>+2000</span>
+                </div>
+            </div>
+        </div>
           <div class="value">
-            <div class="number big-text blue-text">000</div>
-            <div class="small-text blue-text">KTS</div>
+            <div class="number big-text orange-text">+000</div>
+            <div class="small-text orange-text">PÉS/MIN</div>
           </div>
         </div>
       </div>
     </div>
     <div class="footer">
       <div class="footer-output-text">
-        OUTPUT: flightSimulator\shared\flightData.js
+        ARQUIVO DE SAÍDA: flightSimulator\shared\flightData.js
       </div>
     </div>
   </body>
