@@ -1,0 +1,113 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; letter-spacing: 1px;}
+
+:root {
+    --main-color: #0a0e14;
+    --secondary-color: #111827;
+    --detail-color: #1d6bb5;
+    --orange-detail-color: #ff7f50;
+}
+
+
+
+body {
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.main-header {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--detail-color);
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    align-items: stretch;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.imgLogo {
+    aspect-ratio: 1;
+    height: 100%;
+    align-self: stretch;
+    background-image: url("../../../assets/mfsimLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big-text{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.small-text {
+    font-size: 0.7rem;
+    white-space: nowrap
+}
+
+.blue-text {
+    color: var(--detail-color);
+}
+
+.orange-text {
+    color: var(--orange-detail-color);
+}
+
+.right-header-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.right-header-text .text {
+    color: #22c55e;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    height: 65%;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid var(--detail-color); /* Linha cinza embaixo */
+    margin: 10px 0;
+}   
+
+.footer {
+    background-color: var(--secondary-color);
+    border-top: 1px solid var(--detail-color);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--detail-color);
+}
