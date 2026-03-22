@@ -1,5 +1,5 @@
 {
-  "name": "transmissor",
+  "name": "Transmissor",
   "version": "1.0.0",
   "description": "Transmissor de dados de voo - MFSim",
   "main": "main.js",

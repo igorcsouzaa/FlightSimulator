@@ -1,5 +1,5 @@
 {
-  "name": "leitor",
+  "name": "Leitor",
   "version": "1.0.0",
   "description": "Leitor de instrumentos de voo - MFSim",
   "main": "main.js",
