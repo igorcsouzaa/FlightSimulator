@@ -5,7 +5,7 @@ const fs = require("fs")
 // Caminhos usados no app
 const srcPath = path.join(__dirname + "/src")
 const pagesPath = path.join(srcPath + "/pages")
-const DATA_PATH = 'C:\\MFSIM DADOS\\dados.json'     // caminho do JSON compartilhado com o leitor
+const DATA_PATH = path.join(require('os').homedir(), 'MFSIM DADOS', 'dados.json')    // caminho do JSON compartilhado com o leitor
 
 function CreateWindow() {
     const win = new BrowserWindow({
@@ -21,6 +21,10 @@ function CreateWindow() {
     })
     win.setMenu(null)
     win.loadFile(pagesPath + '/index.html')
+
+    win.webContents.on('did-finish-load', () => {
+        win.webContents.send('data-path', DATA_PATH)
+    })
 }
 
 // Escuta o evento 'save-data' enviado pelo renderer quando o slider é movido

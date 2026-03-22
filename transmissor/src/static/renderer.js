@@ -38,3 +38,8 @@ sliderVS.addEventListener('input', () => {
     valueVS.textContent = fmtVS(sliderVS.value)
     sendData()
 })
+
+ipcRenderer.on('data-path', (event, path) => {
+    document.querySelector('.footer-output-text').textContent = 
+        `ARQUIVO DE SAÍDA: ${path}`
+})

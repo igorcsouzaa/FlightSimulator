@@ -4,7 +4,7 @@ const fs = require('fs')
 
 // Caminhos usados no app
 const pagesPath = path.join(__dirname, 'src/pages')
-const DATA_PATH = 'C:\\MFSIM DADOS\\dados.json'     // caminho do JSON gravado pelo transmissor
+const DATA_PATH = path.join(require('os').homedir(), 'MFSIM DADOS', 'dados.json')     // caminho do JSON gravado pelo transmissor
 
 // Referência global da janela — necessário para enviar dados via IPC de fora da função
 let win
@@ -23,6 +23,10 @@ function CreateWindow() {
     })
     win.setMenu(null)
     win.loadFile(path.join(pagesPath, 'index.html'))
+
+    win.webContents.on('did-finish-load', () => {
+        win.webContents.send('data-path', DATA_PATH)
+    })
 
     // Polling: lê o JSON a cada 100ms e envia os dados pro renderer
     setInterval(() => {

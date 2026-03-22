@@ -78,3 +78,8 @@ function updateNeedles(data) {
 ipcRenderer.on('flight-data', (event, data) => {
     updateNeedles(data)
 })
+
+ipcRenderer.on('data-path', (event, path) => {
+    document.querySelector('.footer-output-text').textContent = 
+        `ARQUIVO DE ENTRADA: ${path}`
+})
