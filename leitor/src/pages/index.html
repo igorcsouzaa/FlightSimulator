@@ -20,9 +20,34 @@
         <div class="text">RECEBENDO</div>
       </div>
     </header>
+    <div class="content">
+      <div class="container-indicators">
+        <div class="as-view">
+          <div class="indicator-wrapper">
+              <div class="as-indicator"></div>
+              <div class="needle as-needle" id="needleAS"></div>
+          </div>
+          <div class="as-text">
+              <div class="big-text">VELOCIDADE</div>
+              <div class="small-text blue-text">NÓS (KT)</div>
+          </div>
+        </div>
+        
+        <div class="vs-view">
+            <div class="indicator-wrapper">
+                <div class="vs-indicator"></div>
+                <div class="needle vs-needle" id="needleVS"></div>
+            </div>
+            <div class="vs-text">
+                <div class="big-text">VELOCIDADE VERTICAL</div>
+                <div class="small-text blue-text">PÉS/MIN (VSI)</div>
+            </div>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       <div class="footer-output-text">
-        ARQUIVO DE SAÍDA: flightSimulator\shared\flightData.js
+        RECEBENDO DE: flightSimulator\shared\flightData.js
       </div>
     </div>
     <script src="../static/renderer.js"></script>

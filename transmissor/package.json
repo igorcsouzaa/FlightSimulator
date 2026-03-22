@@ -1,7 +1,7 @@
 {
   "name": "transmissor",
   "version": "1.0.0",
-  "description": "",
+  "description": "Transmissor de dados de voo - MFSim",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -10,16 +10,19 @@
   },
   "build": {
     "win": {
-      "icon": "src/assets/mfsimLogo.ico"
-    }
+      "icon": "/src/assets/mfsimLogo.ico"
+    },
+    "forceCodeSigning": false
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^41.0.3",
-    "electron-builder": "^26.8.1",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
     "path": "^0.12.7"
   }
 }
