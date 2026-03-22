@@ -3,7 +3,6 @@ const path = require('path')
 const fs = require('fs')
 
 // Caminhos usados no app
-const assetsPath = path.join(__dirname, '\\assets') // pasta de assets compartilhada
 const pagesPath = path.join(__dirname, 'src/pages')
 const DATA_PATH = 'C:\\MFSIM DADOS\\dados.json'     // caminho do JSON gravado pelo transmissor
 
@@ -12,17 +11,17 @@ let win
 
 function CreateWindow() {
     win = new BrowserWindow({
-        width: 800,
-        height: 600,
-        minWidth: 800,
-        minHeight: 600,
-        icon: path.join(assetsPath, '\\mfsimLogo.ico'),
+        width: 880,
+        height: 660,
+        minWidth: 880,
+        minHeight: 660,
+        icon: path.join('src/assets/mfsimLogo.ico'),
         webPreferences: {
             nodeIntegration: true,    // permite usar require() no renderer.js
             contextIsolation: false   // necessário para o ipcRenderer funcionar
         }
     })
-
+    win.setMenu(null)
     win.loadFile(path.join(pagesPath, 'index.html'))
 
     // Polling: lê o JSON a cada 100ms e envia os dados pro renderer

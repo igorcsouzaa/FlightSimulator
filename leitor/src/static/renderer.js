@@ -41,11 +41,11 @@ const vsCalibration = [
     { vs: -2000, deg: -262 },
     { vs: -1500, deg: -216 },
     { vs: -1000, deg: -170 },
-    { vs: -500,  deg: -125 },
+    { vs: -500,  deg: -126 },
     { vs: 0,     deg: -90  },
     { vs: 500,   deg: -55  },
     { vs: 1000,  deg: -10  },
-    { vs: 1500,  deg: 36   },
+    { vs: 1500,  deg: 38   },
     { vs: 2000,  deg: 84   }
 ]
 

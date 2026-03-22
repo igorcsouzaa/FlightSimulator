@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; letter-spacing: 1px;}
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; letter-spacing: 1px; user-select: none;}
 
 :root {
     --main-color: #0a0e14;
