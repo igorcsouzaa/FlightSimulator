@@ -29,6 +29,10 @@ O FlightSimulator é um sistema composto por dois aplicativos desktop que se com
 Os dados são gravados pelo Transmissor em `C:\MFSIM DADOS\dados.json` e lidos pelo Leitor a cada 100ms, atualizando os ponteiros em tempo real.
 
 ---
+<p align="center">
+  <img src="docs/tela1.png" width="48%" />
+  <img src="docs/tela2.png" width="48%" />
+</p>
 
 ## 🛠 Tecnologias Utilizadas
 
